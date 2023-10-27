@@ -56,7 +56,7 @@ const secured = new Promise((resolve, reject) => {
     }
 
     global.asmCrypto = require('asmcrypto.js');
-    const liner = require('./webcrypto-liner');
+    const liner = require('webcrypto-liner');
 
     const originalImportKey = crypto.subtle.importKey;
     crypto.subtle.importKey = function importKey() {
